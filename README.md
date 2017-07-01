@@ -13,7 +13,7 @@ log.js 是 node.js 的一个调试工具。支持彩色，还有
 
 # 用法
 
-```
+```js
 const log = require('./log.js')
 
 log('欢迎使用log.js。')
@@ -38,7 +38,7 @@ log.debug('这是自定义的log')
 
 ## 命令
 
-```
+```bat
 node demo.js --dev
 ```
 
@@ -55,8 +55,8 @@ node demo.js --dev
 ![截图1][1]
 ![截图2][2]
 
-[1]: img/20170701212517.png
-[2]: img/20170701212517.png
+[1]: imgs/20170701212517.png
+[2]: imgs/20170701212625.png
 
 ## 自定义log
 
