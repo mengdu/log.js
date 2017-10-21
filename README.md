@@ -1,10 +1,13 @@
 # log.js
 
-log.js 是 node.js 的一个调试工具。支持彩色，还有
-最大亮点那就是可以显示输出所在行的文件路径及行号。
+log.js 是 node.js 的一个调试工具。
+
++ 支持彩色
++ 可以显示当前log调用脚本文件路径及行号
 
 ## api
 
++ log.config({debug, absolute}) 配置
 + log(string)
 + log.info(string)
 + log.success(string)
@@ -36,18 +39,9 @@ log.debug('这是自定义的log')
 
 可以运行 `demo.js` 查看效果
 
-## 命令
 
-```bat
-node demo.js --dev
-```
 
-*参数:*
-
-+ `--dev` 开发模式，开发模式会出现文件名和行号 
-+ `--dev-show-path` 文件名显示绝对路径
-
-注：显示文件名和行号会影响js性能，上线项目请自行删掉log，或者不加上面两个参数，会使用console.log。
+注：显示文件名和行号会影响js性能，上线项目请自行删掉log，或者配置debug为false
 
 ## 效果图
 
@@ -80,10 +74,7 @@ log.名字(str)
     yellow
 ```
 
-## 期望
 
-其实还可以加多点功能，比如：
+## other
 
-+ 做更多的样式配置（请看https://github.com/Marak/colors.js）
-+ 增加log的打印时间
-
+[colors](https://github.com/Marak/colors.js)
