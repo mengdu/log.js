@@ -1,8 +1,8 @@
 {
-  "name": "log.js",
+  "name": "log-mini",
   "version": "1.0.0",
   "description": "node.js 调试工具",
-  "main": "index.js",
+  "main": "lib/log.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/mengdu/log.js.git"
   },
-  "author": "",
+  "author": "lanyue",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mengdu/log.js/issues"
   },
+  "keywords": [
+    "log.js",
+    "log",
+    "console",
+    "log-mini"
+  ],
   "homepage": "https://github.com/mengdu/log.js#readme"
 }

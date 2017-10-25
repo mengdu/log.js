@@ -7,10 +7,10 @@ const log = require('./lib/log.js')
 
 log('欢迎使用log.js。')
 
-// log.info('这是info提示信息')
-// log.success('这是success提示信息')
-// log.error('这是error提示信息')
-// log.warn('这是warn提示信息')
+log.info('这是info提示信息')
+log.success('这是success提示信息')
+log.error('这是error提示信息')
+log.warn('这是warn提示信息')
 
 // // 自定义log
 // log.addLog('test', 'cyan')

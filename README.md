@@ -5,6 +5,14 @@ log.js 是 node.js 的一个调试工具。
 + 支持彩色
 + 可以显示当前log调用脚本文件路径及行号
 
+
+## install
+
+```bat
+npm install -S log-mini
+```
+
+
 ## api
 
 + log.config({debug, absolute}) 配置
@@ -18,6 +26,8 @@ log.js 是 node.js 的一个调试工具。
 
 ```js
 const log = require('./log.js')
+
+log.config({debug: true, absolute: false})
 
 log('欢迎使用log.js。')
 
@@ -54,7 +64,7 @@ log.debug('这是自定义的log')
 
 ## 自定义log
 
-```
+```js
 log.addLog('名字', '颜色')
 
 log.名字(str)
@@ -62,7 +72,7 @@ log.名字(str)
 ```
 
 支持颜色有：
-```
+```text
     white
     grey
     black
